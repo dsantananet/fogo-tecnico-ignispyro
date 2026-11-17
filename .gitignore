@@ -12,3 +12,8 @@ private/
 *.csv
 node_modules/
 .DS_Store
+
+android/
+*.p12
+*.pem
+*.dpapi

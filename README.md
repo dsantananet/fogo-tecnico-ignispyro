@@ -14,7 +14,6 @@ Protótipo público para recolha documental de ações de fogo controlado e quei
 
 ## Limitações antes da utilização em produção
 
-- Sem APK Android nativo compilado; para instalação PWA é preciso alojamento HTTPS.
 - Sem Google OAuth ou gravação automática no Drive; exportar e partilhar manualmente.
 - Não cria mapas georreferenciados a partir de KMZ; o mapa deve ser anexado como imagem.
 - Fotos e mapas não persistem nas cópias JSON; o utilizador deve arquivar os originais.
@@ -31,9 +30,12 @@ python -m http.server 8080
 
 Abrir `http://localhost:8080`. Para instalar no Android, publicar `app/` via HTTPS e escolher **Instalar aplicação** no menu do Chrome.
 
-## Android nativo
+## Android
 
-O projeto web não é um APK. Para uma versão Android nativa sem WebView embebida, a interface e os exportadores devem ser portados para Kotlin/Android. Não atribuir a extensão `.apk` ao ZIP nem distribuir um instalador não compilado.
+A aplicação Android usa Capacitor para executar localmente a mesma interface da versão web.
+Os ficheiros são guardados no destino escolhido pelo utilizador e o POQ usa a impressão do Android.
+
+As instruções de compilação e instalação estão em [BUILD_ANDROID.md](BUILD_ANDROID.md).
 
 ## Licenciamento e identidade
 

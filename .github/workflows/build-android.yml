@@ -8,6 +8,7 @@ permissions:
 jobs:
   android:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -22,13 +23,38 @@ jobs:
           packages: platform-tools platforms;android-35 build-tools;35.0.0
           log-accepted-android-sdk-licenses: false
       - run: npm install --no-audit --no-fund
-      - run: npx cap add android
-      - run: bash gradlew assembleDebug
+      - run: npx cap add android && node android-src/prepare.mjs
+      - run: bash gradlew assembleRelease
         working-directory: android
+      - name: Sign and verify distribution APK
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
+          SIGNING_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          umask 077
+          keyfile="$(mktemp)"
+          trap 'rm -f "$keyfile"' EXIT
+          printf '%s' "$KEYSTORE_B64" | base64 --decode > "$keyfile"
+          tools="$ANDROID_HOME/build-tools/35.0.0"
+          apk=Fogo-Tecnico-IgnisPyro-v2.1.0.apk
+          "$tools/zipalign" -P 16 -f 4 android/app/build/outputs/apk/release/app-release-unsigned.apk "$RUNNER_TEMP/aligned.apk"
+          "$tools/apksigner" sign --ks "$keyfile" --ks-type PKCS12 --ks-key-alias fogotecnico --ks-pass env:SIGNING_PASSWORD --out "$apk" "$RUNNER_TEMP/aligned.apk"
+          "$tools/apksigner" verify --verbose --print-certs "$apk"
+          "$tools/aapt" dump badging "$apk" | sed -n '1,5p'
+      - name: Enable emulator acceleration
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Test signed APK on Android 35
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          script: bash android-src/smoke.sh Fogo-Tecnico-IgnisPyro-v2.1.0.apk
       - uses: actions/upload-artifact@v4
         with:
           name: fogo-tecnico-android
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: Fogo-Tecnico-IgnisPyro-v2.1.0.apk
           if-no-files-found: error
-
 
