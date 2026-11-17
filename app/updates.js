@@ -1,9 +1,9 @@
 (() => {
   const bridge = globalThis.Capacitor;
   const control = document.getElementById('androidUpdate');
-  if (bridge?.getPlatform() !== 'android') return;
+  if (bridge?.getPlatform?.() !== 'android' || !bridge.Plugins?.ReleaseUpdates) return;
 
-  const releases = bridge.registerPlugin('ReleaseUpdates');
+  const releases = bridge.Plugins.ReleaseUpdates;
   const repo = 'dsantananet/fogo-tecnico-ignispyro';
   const versionPattern = /^v?(\d+)\.(\d+)\.(\d+)$/;
   const versionLabel = document.querySelector('.app-version');

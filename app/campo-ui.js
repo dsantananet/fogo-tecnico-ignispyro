@@ -9,7 +9,7 @@ function fieldActionId() {
 }
 
 async function fieldPosition() {
-  const geo = window.Capacitor?.isNativePlatform?.() && window.Capacitor.registerPlugin('Geolocation');
+  const geo = window.Capacitor?.isNativePlatform?.() && window.Capacitor.Plugins?.Geolocation;
   if (geo) {
     try {
       const permission = await geo.requestPermissions({permissions:['location']});
