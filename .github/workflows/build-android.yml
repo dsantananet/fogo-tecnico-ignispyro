@@ -2,6 +2,7 @@ name: Build Android APK
 on:
   push:
     branches: [main]
+    tags: ['v*']
   workflow_dispatch:
 permissions:
   contents: read
@@ -22,6 +23,14 @@ jobs:
         with:
           packages: platform-tools platforms;android-35 build-tools;35.0.0
           log-accepted-android-sdk-licenses: false
+      - name: Set APK filename
+        run: |
+          version="$(node -p 'require("./package.json").version')"
+          if [[ "$GITHUB_REF" == refs/tags/* && "$GITHUB_REF_NAME" != "v$version" ]]; then
+            echo "Git tag does not match package.json" >&2
+            exit 1
+          fi
+          echo "APK=Fogo-Tecnico-IgnisPyro-v${version}.apk" >> "$GITHUB_ENV"
       - run: npm install --no-audit --no-fund
       - run: npx cap add android && node android-src/prepare.mjs
       - run: bash gradlew assembleRelease
@@ -36,11 +45,10 @@ jobs:
           trap 'rm -f "$keyfile"' EXIT
           printf '%s' "$KEYSTORE_B64" | base64 --decode > "$keyfile"
           tools="$ANDROID_HOME/build-tools/35.0.0"
-          apk=Fogo-Tecnico-IgnisPyro-v2.1.0.apk
           "$tools/zipalign" -P 16 -f 4 android/app/build/outputs/apk/release/app-release-unsigned.apk "$RUNNER_TEMP/aligned.apk"
-          "$tools/apksigner" sign --ks "$keyfile" --ks-type PKCS12 --ks-key-alias fogotecnico --ks-pass env:SIGNING_PASSWORD --out "$apk" "$RUNNER_TEMP/aligned.apk"
-          "$tools/apksigner" verify --verbose --print-certs "$apk"
-          "$tools/aapt" dump badging "$apk" | sed -n '1,5p'
+          "$tools/apksigner" sign --ks "$keyfile" --ks-type PKCS12 --ks-key-alias fogotecnico --ks-pass env:SIGNING_PASSWORD --out "$APK" "$RUNNER_TEMP/aligned.apk"
+          "$tools/apksigner" verify --verbose --print-certs "$APK"
+          "$tools/aapt" dump badging "$APK" | sed -n '1,5p'
       - name: Enable emulator acceleration
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -51,11 +59,11 @@ jobs:
         with:
           api-level: 35
           arch: x86_64
-          script: bash android-src/smoke.sh Fogo-Tecnico-IgnisPyro-v2.1.0.apk
+          script: bash android-src/smoke.sh "$APK"
       - uses: actions/upload-artifact@v4
         with:
           name: fogo-tecnico-android
-          path: Fogo-Tecnico-IgnisPyro-v2.1.0.apk
+          path: ${{ env.APK }}
           if-no-files-found: error
 
   publish:
