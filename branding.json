@@ -1,0 +1,15 @@
+{
+  "product": "Fogo Técnico",
+  "brand": "Made by IgnisPyro",
+  "version": "2.0.0",
+  "colors": {
+    "navy": "#0A1F33",
+    "petroleum": "#0E5A4F",
+    "forest": "#1F6B2A",
+    "field": "#7FA329",
+    "flame": "#F57C00",
+    "yellow": "#FBC02D",
+    "background": "#F5F5F5",
+    "subtle": "#D9E1E5"
+  }
+}

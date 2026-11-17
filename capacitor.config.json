@@ -1,0 +1,8 @@
+{
+  "appId": "pt.ignispyro.fogotecnico",
+  "appName": "Fogo T\u00e9cnico",
+  "webDir": "app",
+  "server": {
+    "androidScheme": "https"
+  }
+}

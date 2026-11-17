@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Fogo Técnico — Made by IgnisPyro",
+  "short_name": "Fogo Técnico",
+  "description": "Registos documentais de fogo técnico, dashboard de ações e horas, meteorologia, Excel e POQ",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F5F5F5",
+  "theme_color": "#0A1F33",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

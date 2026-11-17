@@ -1,0 +1,14 @@
+*.apk
+*.aab
+*.keystore
+*.jks
+*.json.bak
+private/
+*.xlsm
+*.xlsx
+*.kmz
+*.kml
+*.docx
+*.csv
+node_modules/
+.DS_Store
