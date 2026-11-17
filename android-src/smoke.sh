@@ -8,7 +8,7 @@ adb shell am start -W -n "$package/.MainActivity"
 for attempt in {1..12}; do
   adb shell uiautomator dump /sdcard/fogo-tecnico-ui.xml || continue
   adb pull /sdcard/fogo-tecnico-ui.xml "$RUNNER_TEMP/fogo-tecnico-ui.xml" || { sleep 2; continue; }
-  if grep -qi 'Horas-parcela\|Sem ações arquivadas\|Área registada' "$RUNNER_TEMP/fogo-tecnico-ui.xml"; then
+  if grep -qi 'Sem ações arquivadas' "$RUNNER_TEMP/fogo-tecnico-ui.xml"; then
     adb shell pidof "$package"
     echo 'Dashboard rendered on Android'
     exit 0

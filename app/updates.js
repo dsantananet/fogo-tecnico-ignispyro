@@ -3,7 +3,7 @@
   const control = document.getElementById('androidUpdate');
   if (bridge?.getPlatform() !== 'android') return;
 
-  const releases = bridge.registerPlugin('ReleaseUpdates');
+  const releases = androidPlugin('ReleaseUpdates', ['version', 'download']);
   const repo = 'dsantananet/fogo-tecnico-ignispyro';
   const versionPattern = /^v?(\d+)\.(\d+)\.(\d+)$/;
   const versionLabel = document.querySelector('.app-version');

@@ -15,8 +15,13 @@ function renderMeteo(){const sorted=state.meteo.map((m,i)=>({...m,idx:i})).sort(
 function addMeteo(){const date=$('metData').value,temp=$('temp').value,hr=$('hr').value,vento=$('vento').value;if(!date||temp===''||hr===''||vento===''){alert('Introduz data/hora, temperatura, humidade relativa e vento.');return}if(+hr<0||+hr>100||+vento<0){alert('Verifica humidade e vento.');return}const par=state.parcelas[+$('metParcela').value];if(!par){alert('Adiciona uma parcela.');return}state.meteo.push({parcela:par.id||par.nome,date,temp,hr,tempo:$('tempo').value,vento,direcao:$('direcao').value,conducao:$('conducao').value,obs:$('metObs').value});save();renderMeteo();['temp','hr','vento','metObs'].forEach(x=>$(x).value='');$('metData').value=new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,16)}
 function csv(rows){return '\uFEFF'+rows.map(row=>row.map(x=>'"'+String(x??'').replaceAll('"','""')+'"').join(';')).join('\r\n')+'\r\n'}
 function rowsMeteo(){return [['Ocorrência','ID_PARC','Data','Hora','Temperatura (°C)','Humidade relativa (%)','Estado do tempo (0-8)','Vento a 2m (km/h)','Direção','Condução (1-5)','Observações'],...state.meteo.slice().sort((a,b)=>a.date.localeCompare(b.date)).map(m=>[state.ocorrencia,m.parcela,m.date.slice(0,10),m.date.slice(11,16),m.temp,m.hr,m.tempo,m.vento,m.direcao,m.conducao,m.obs])]}
+function androidPlugin(name, methods) {
+  const bridge = globalThis.Capacitor;
+  return Object.fromEntries(methods.map(method => [method, options =>
+    bridge.nativePromise(name, method, options ?? {})]));
+}
 const androidFiles = globalThis.Capacitor?.getPlatform() === 'android'
-  ? globalThis.Capacitor.registerPlugin('DocumentFiles')
+  ? androidPlugin('DocumentFiles', ['save', 'print'])
   : null;
 async function blobDownload(blob,name){
   if (androidFiles) {
