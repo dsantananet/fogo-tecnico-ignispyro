@@ -17,7 +17,10 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools platforms;android-35 build-tools;35.0.0
+          log-accepted-android-sdk-licenses: false
       - run: npm install --no-audit --no-fund
       - run: npx cap add android
       - run: bash gradlew assembleDebug
@@ -27,4 +30,5 @@ jobs:
           name: fogo-tecnico-android
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
+
 
