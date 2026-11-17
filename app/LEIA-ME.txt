@@ -1,18 +1,16 @@
-FOGO TÉCNICO — FORMULÁRIO PWA (PROTÓTIPO 1)
+FOGO TÉCNICO — REGISTO DOCUMENTAL 2.1
 
 1. Abrir index.html num navegador de computador: funciona localmente para preenchimento/exportação.
-2. Para instalação Android, publicar TODOS os ficheiros desta pasta num endereço HTTPS sob o próprio domínio, por exemplo https://seudominio.pt/fogo-tecnico/.
+2. Para utilizar a versão PWA, publicar TODOS os ficheiros desta pasta num endereço HTTPS sob o próprio domínio, por exemplo https://seudominio.pt/fogo-tecnico/.
 3. No Chrome Android, abrir esse endereço e escolher menu ⋮ > Instalar aplicação ou Adicionar ao ecrã principal.
 4. A aplicação funciona offline depois da primeira abertura no HTTPS (service worker).
 5. Em «Ação», escolher o percurso Fogo controlado ou Queimada extensiva, completar parcelas.
-6. Em «Intervenientes», gerir técnicos, credenciações e meios. Os nomes de exemplo são editáveis.
+6. Em «Intervenientes», gerir técnicos, credenciações e meios.
 7. Em «Meteorologia», guardar observações; exportar/partilhar CSV.
 8. Em «POQ», registar humidade dos combustíveis, execução, efeitos e fotos. O POQ é um documento de impressão/PDF, não o modelo Word original.
 9. Em «Exportar»: escolher, opcionalmente, o Excel .xlsx existente como modelo para acrescentar parcelas; exportar e guardar o ficheiro resultante no Google Drive pelo seletor/partilha do Android.
 
 LIMITAÇÕES DESTA VERSÃO:
-- Não é um APK Android. É uma PWA que se instala no ecrã principal em HTTPS.
-- Não está publicada num servidor; só será instalável após publicação HTTPS.
 - Não tem OAuth Google Drive. Não grava diretamente numa pasta Google Drive nem altera o ficheiro remoto. É necessário guardar o ficheiro exportado no Drive.
 - Não trabalha diretamente com .xlsm (macros) por segurança. Deve ser fornecida uma cópia .xlsx.
 - O preenchimento do POQ de impressão segue as secções visíveis no modelo enviado, mas não reproduz integralmente os layouts/páginas oficiais.
@@ -20,6 +18,6 @@ LIMITAÇÕES DESTA VERSÃO:
 - Fotos ficam apenas na sessão do navegador: exporta/imprime POQ antes de fechar; os dados de texto são guardados em armazenamento local e podem ser exportados como JSON.
 - Credenciações, áreas, operações, mapas e parâmetros devem ser verificados por técnico responsável antes de serem submetidos.
 - O Excel mestre, se escolhido, é processado integralmente no navegador (não é enviado para um servidor). A aplicação acrescenta registos ao fim do separador «Acções de fogo Controlado». Não elimina duplicados.
-- O original POQ Word aparenta ter 9 páginas físicas no ficheiro recebido e marcação de 10 páginas impressas; esta versão não pressupõe uma paginação oficial fixa.
+- A paginação depende dos registos e das opções de impressão.
 
 Segurança: não guardar documentos confidenciais em telemóveis partilhados. Respeitar as regras de acesso e tratamento de dados aplicáveis.

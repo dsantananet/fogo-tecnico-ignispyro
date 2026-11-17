@@ -1,8 +1,8 @@
 # Fogo Técnico — Made by IgnisPyro
 
-Protótipo público para recolha documental de ações de fogo controlado e queimadas extensivas. **Não é um sistema oficial ICNF, nem ferramenta de decisão de ignição, meteorologia previsional ou autorização de queimas.**
+Aplicação para recolha documental de ações de fogo controlado e queimadas extensivas. **Não é um sistema oficial ICNF, nem ferramenta de decisão de ignição, meteorologia previsional ou autorização de queimas.**
 
-## Funcionalidades da versão 2.1 (PWA)
+## Funcionalidades da versão 2.1
 
 - Dashboard local de ações, parcelas, área e horas-parcela por ano, com arquivo e cópia JSON privada. Os cálculos não são horas-homem.
 - Formulário para identificação da ação e várias parcelas, responsáveis, técnicos/OPQ e meios.
@@ -35,7 +35,7 @@ Abrir `http://localhost:8080`. Para instalar no Android, publicar `app/` via HTT
 A aplicação Android usa Capacitor para executar localmente a mesma interface da versão web.
 Os ficheiros são guardados no destino escolhido pelo utilizador e o POQ usa a impressão do Android.
 
-As instruções de compilação e instalação estão em [BUILD_ANDROID.md](BUILD_ANDROID.md).
+O instalador assinado é disponibilizado na secção [Releases](https://github.com/dsantananet/fogo-tecnico-ignispyro/releases). As instruções de compilação e instalação estão em [BUILD_ANDROID.md](BUILD_ANDROID.md).
 
 ## Licenciamento e identidade
 
