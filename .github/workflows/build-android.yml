@@ -58,3 +58,23 @@ jobs:
           path: Fogo-Tecnico-IgnisPyro-v2.1.0.apk
           if-no-files-found: error
 
+  publish:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: android
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: fogo-tecnico-android
+      - name: Publish tested APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          apk="Fogo-Tecnico-IgnisPyro-${TAG}.apk"
+          test -f "$apk"
+          sha256sum "$apk" > SHA256SUMS.txt
+          gh release create "$TAG" "$apk" SHA256SUMS.txt --verify-tag \
+            --repo "$GITHUB_REPOSITORY" --title "Fogo Técnico $TAG" --generate-notes

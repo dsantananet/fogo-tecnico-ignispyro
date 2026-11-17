@@ -22,6 +22,7 @@ public class MainActivity extends BridgeActivity {
     @Override
     public void onCreate(Bundle state) {
         registerPlugin(DocumentFiles.class);
+        registerPlugin(ReleaseUpdates.class);
         super.onCreate(state);
     }
 
