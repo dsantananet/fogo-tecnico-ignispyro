@@ -1,0 +1,1596 @@
+{
+  "fonte": "https://www.icnf.pt/api/file/doc/7c83c04d2c956894",
+  "edicao": "2026-04-14",
+  "registos": [
+    {
+      "cred": "3-2005",
+      "nome": "Hermínio da Silva Botelho",
+      "validade": "Vitalícia"
+    },
+    {
+      "cred": "4-2005",
+      "nome": "Sérgio António Correia",
+      "validade": "Vitalícia"
+    },
+    {
+      "cred": "5-2005",
+      "nome": "António Joaquim Salgueiro Rocha da Silva",
+      "validade": "Vitalícia"
+    },
+    {
+      "cred": "6-2005",
+      "nome": "Paulo Alexandre Martins Fernandes",
+      "validade": "Vitalícia"
+    },
+    {
+      "cred": "7-2005",
+      "nome": "Miguel Gomes da Cruz",
+      "validade": "Vitalícia"
+    },
+    {
+      "cred": "8-2005",
+      "nome": "Paulo José Vaz Rainha Mateus",
+      "validade": "Vitalícia"
+    },
+    {
+      "cred": "9-2005",
+      "nome": "Carlos Alberto Rodrigues Loureiro da Silva",
+      "validade": "Vitalícia"
+    },
+    {
+      "cred": "15-2005",
+      "nome": "Manuel Luís Costa Correia Rainha",
+      "validade": "Vitalícia"
+    },
+    {
+      "cred": "28-2006",
+      "nome": "Bruno Miguel Ramos Fernandes",
+      "validade": "2029-07-03"
+    },
+    {
+      "cred": "34-2006",
+      "nome": "Fernando José de Moura Barros",
+      "validade": "2029-07-03"
+    },
+    {
+      "cred": "44-2006",
+      "nome": "Helena Mónica da Silva Barbosa",
+      "validade": "2030-03-26"
+    },
+    {
+      "cred": "54-2007",
+      "nome": "Nelson Tiago Antunes Rodrigues",
+      "validade": "2030-03-01"
+    },
+    {
+      "cred": "60-2007",
+      "nome": "José Carlos dos Santos da Costa",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "64-2008",
+      "nome": "Artur Armando Ribeiro da Mota",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "73-2008",
+      "nome": "António Jorge Marques Coimbra",
+      "validade": "2029-07-03"
+    },
+    {
+      "cred": "76-2008",
+      "nome": "Marco Rosa Santos",
+      "validade": "2030-03-01"
+    },
+    {
+      "cred": "77-2008",
+      "nome": "Carlos Júlio Batista Trindade",
+      "validade": "2030-03-01"
+    },
+    {
+      "cred": "82-2008",
+      "nome": "Luís Paulo da Costa Pita",
+      "validade": "2030-05-31"
+    },
+    {
+      "cred": "84-2008",
+      "nome": "Marília de Almeida",
+      "validade": "2030-03-01"
+    },
+    {
+      "cred": "102-2008",
+      "nome": "Sónia Margarida Rodrigues Beito",
+      "validade": "2030-03-26"
+    },
+    {
+      "cred": "110-2009",
+      "nome": "Luís Mário da Silva Ribeiro",
+      "validade": "2030-03-01"
+    },
+    {
+      "cred": "111-2009",
+      "nome": "Luís Manuel Silva Moita",
+      "validade": "2029-07-03"
+    },
+    {
+      "cred": "121-2010",
+      "nome": "Artur Jorge Ramos da Silva Carvalho Borges",
+      "validade": "2030-10-01"
+    },
+    {
+      "cred": "130-2011",
+      "nome": "António Miguel Monteiro Branco Costa Rodrigues",
+      "validade": "2030-05-01"
+    },
+    {
+      "cred": "134-2011",
+      "nome": "Ricardo Jorge Fernandes do Nascimento",
+      "validade": "2026-10-31"
+    },
+    {
+      "cred": "140-2012",
+      "nome": "Luís Alexandre Valente de Matos",
+      "validade": "2027-03-31"
+    },
+    {
+      "cred": "143-2012",
+      "nome": "José Eduardo Mendes Afonso",
+      "validade": "2027-03-31"
+    },
+    {
+      "cred": "145-2012",
+      "nome": "Marcos Paulo da Eira Coutinho",
+      "validade": "2027-03-31"
+    },
+    {
+      "cred": "150-2012",
+      "nome": "Emanuel Renato Sousa de Oliveira",
+      "validade": "2027-03-31"
+    },
+    {
+      "cred": "152-2012",
+      "nome": "Maria Amélia Fernandes Freitas",
+      "validade": "2027-04-30"
+    },
+    {
+      "cred": "153-2012",
+      "nome": "José António Pinheiro Gonçalves",
+      "validade": "2027-05-31"
+    },
+    {
+      "cred": "159-2014",
+      "nome": "David André Dias Davim",
+      "validade": "2029-07-03"
+    },
+    {
+      "cred": "160-2014",
+      "nome": "Daniela Catarina Teixeira Fraga",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "161-2014",
+      "nome": "Carlos Alberto Trindade Santos",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "162-2014",
+      "nome": "Pedro Miguel Castro Alves",
+      "validade": "2029-09-30"
+    },
+    {
+      "cred": "163-2014",
+      "nome": "Samuel David Rodrigues Martins",
+      "validade": "2029-10-01"
+    },
+    {
+      "cred": "164-2014",
+      "nome": "Rui Manuel Mendes Costa",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "165-2014",
+      "nome": "Luís Miguel da Conceição Henriques",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "166-2015",
+      "nome": "Hugo Henrique Neto Rocha",
+      "validade": "2030-06-01"
+    },
+    {
+      "cred": "167-2015",
+      "nome": "Vítor José Rijo Penedo Caramelo",
+      "validade": "2030-08-31"
+    },
+    {
+      "cred": "168-2015",
+      "nome": "João Luís Gonçalves dos Santos",
+      "validade": "2030-08-31"
+    },
+    {
+      "cred": "169-2015",
+      "nome": "José Jesus Gaspar",
+      "validade": "2030-08-31"
+    },
+    {
+      "cred": "170-2015",
+      "nome": "João Pedro Ruas Quadrado",
+      "validade": "2030-09-30"
+    },
+    {
+      "cred": "174-2015",
+      "nome": "Verónica Vieira Catarino",
+      "validade": "2030-11-30"
+    },
+    {
+      "cred": "176-2015",
+      "nome": "José Lourenço Calado Motaco",
+      "validade": "2030-12-31"
+    },
+    {
+      "cred": "178-2016",
+      "nome": "Daniel Ricardo Maranhão Santana",
+      "validade": "2026-04-30"
+    },
+    {
+      "cred": "180-2016",
+      "nome": "João Paulo Miranda da Costa",
+      "validade": "2026-07-31"
+    },
+    {
+      "cred": "181-2016",
+      "nome": "Marco André Ribeiro Domingues",
+      "validade": "2026-08-31"
+    },
+    {
+      "cred": "192-2016",
+      "nome": "Luís Manuel do Espírito Santo Ramos",
+      "validade": "2026-12-31"
+    },
+    {
+      "cred": "196-2017",
+      "nome": "Fernando Martins Tristão",
+      "validade": "2027-01-31"
+    },
+    {
+      "cred": "198-2017",
+      "nome": "Nuno Miguel Gonçalves de Sá Bento",
+      "validade": "2027-03-31"
+    },
+    {
+      "cred": "199-2017",
+      "nome": "Luís José Viegas Gonçalves",
+      "validade": "2027-03-31"
+    },
+    {
+      "cred": "201-2017",
+      "nome": "Alexandre Miguel Barros Monteiro Vieira",
+      "validade": "2027-06-16"
+    },
+    {
+      "cred": "202-2017",
+      "nome": "Bruno Alexandre Monteiro Abrantes",
+      "validade": "2027-06-16"
+    },
+    {
+      "cred": "205-2017",
+      "nome": "Marco Alexandre da Cunha Lucas",
+      "validade": "2027-06-30"
+    },
+    {
+      "cred": "206-2017",
+      "nome": "Eduardo José Cruz Marques",
+      "validade": "2027-06-30"
+    },
+    {
+      "cred": "209-2017",
+      "nome": "Fábio Miguel Martins da Silva",
+      "validade": "2027-06-30"
+    },
+    {
+      "cred": "210-2017",
+      "nome": "Tiago Nuno Lopes Cardoso Rebelo Marinho",
+      "validade": "2027-10-02"
+    },
+    {
+      "cred": "212-2017",
+      "nome": "José Albino Alves da Silva",
+      "validade": "2027-11-15"
+    },
+    {
+      "cred": "213-2017",
+      "nome": "Nuno Miguel Pinto Barroso",
+      "validade": "2027-11-15"
+    },
+    {
+      "cred": "217-2017",
+      "nome": "Marco Paulo Cruz Gouveia",
+      "validade": "2027-12-20"
+    },
+    {
+      "cred": "219-2018",
+      "nome": "Mafalda Maria Cunha Alves",
+      "validade": "2028-01-15"
+    },
+    {
+      "cred": "220-2018",
+      "nome": "Filipe da Silva Antunes",
+      "validade": "2028-03-15"
+    },
+    {
+      "cred": "221-2018",
+      "nome": "Fátima Alexandra Canelas Lucas",
+      "validade": "2028-03-15"
+    },
+    {
+      "cred": "224-2018",
+      "nome": "Luís Miguel Alves Francisco",
+      "validade": "2028-03-15"
+    },
+    {
+      "cred": "225-2018",
+      "nome": "Pedro Miguel Morais Gomes",
+      "validade": "2028-03-31"
+    },
+    {
+      "cred": "226-2018",
+      "nome": "Ricardo Fernando Fernandes dos Anjos",
+      "validade": "2028-04-30"
+    },
+    {
+      "cred": "228-2018",
+      "nome": "Bruno António Sousa Gomes",
+      "validade": "2028-04-30"
+    },
+    {
+      "cred": "231-2018",
+      "nome": "Eugénio Manuel Fernandes da Costa Carvalho",
+      "validade": "2028-04-30"
+    },
+    {
+      "cred": "232-2018",
+      "nome": "Jorge Emanuel Marques Picão",
+      "validade": "2028-04-30"
+    },
+    {
+      "cred": "236-2018",
+      "nome": "Bruno Rafael Silva Rodrigues",
+      "validade": "2028-07-31"
+    },
+    {
+      "cred": "241-2018",
+      "nome": "Pedro Miguel André Pires",
+      "validade": "2028-11-30"
+    },
+    {
+      "cred": "246-2018",
+      "nome": "Pedro Sérgio Miranda Fernandes",
+      "validade": "2028-11-30"
+    },
+    {
+      "cred": "251-2018",
+      "nome": "Ernesto José Rodrigues Cardoso de Deus",
+      "validade": "2028-12-20"
+    },
+    {
+      "cred": "253-2018",
+      "nome": "Luís Filipe de Magalhães Freitas",
+      "validade": "2029-01-15"
+    },
+    {
+      "cred": "254-2019",
+      "nome": "João Pedro Aleixo da Costa",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "256-2019",
+      "nome": "Rui Morêda Vasconcelos Teixeira",
+      "validade": "2029-08-08"
+    },
+    {
+      "cred": "257-2019",
+      "nome": "Mónica Cristina Borrega Caldeira",
+      "validade": "2029-08-08"
+    },
+    {
+      "cred": "258-2019",
+      "nome": "Daniela Filipa Gonçalves Martins",
+      "validade": "2029-08-08"
+    },
+    {
+      "cred": "260-2019",
+      "nome": "João Henrique Cruz Loureiro da Silva",
+      "validade": "2029-08-08"
+    },
+    {
+      "cred": "261-2019",
+      "nome": "Nuno Miguel Martins Trigo Moutinho",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "264-2019",
+      "nome": "Rute Maria Faria Gaspar",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "266-2019",
+      "nome": "Romeu Emanuel Cerqueira Pereira Aguiar Monteiro",
+      "validade": "2029-09-17"
+    },
+    {
+      "cred": "267-2019",
+      "nome": "Marco André Magalhães Ribeiro",
+      "validade": "2029-09-17"
+    },
+    {
+      "cred": "268-2019",
+      "nome": "Pedro Alexandre Carocinho de Jesus",
+      "validade": "2029-09-18"
+    },
+    {
+      "cred": "269-2019",
+      "nome": "Tiago António Duro Pocinho",
+      "validade": "2029-09-19"
+    },
+    {
+      "cred": "271-2019",
+      "nome": "Rui Daniel Pinto Marques de Brito",
+      "validade": "2029-09-24"
+    },
+    {
+      "cred": "273-2019",
+      "nome": "João José Jordão Marques",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "274-2019",
+      "nome": "David José Anselmo Fidalgo",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "275-2019",
+      "nome": "Ricardo Miguel de Almeida Guerra",
+      "validade": "2029-10-11"
+    },
+    {
+      "cred": "276-2019",
+      "nome": "Dulce Isabel Martins Gouveia",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "278-2019",
+      "nome": "Ângelo Miguel Teixeira",
+      "validade": "2030-01-31"
+    },
+    {
+      "cred": "279-2020",
+      "nome": "José Marcolino Barranha Lopes",
+      "validade": "2030-01-31"
+    },
+    {
+      "cred": "282-2020",
+      "nome": "Pedro Manuel Pires Penedones",
+      "validade": "2030-01-08"
+    },
+    {
+      "cred": "284-2020",
+      "nome": "Filipa Teresa da Silva Araújo",
+      "validade": "2030-02-13"
+    },
+    {
+      "cred": "285-2020",
+      "nome": "Carlos João Pires Lourenço",
+      "validade": "2030-06-18"
+    },
+    {
+      "cred": "288-2020",
+      "nome": "Rosana Patricia Ribeiro Machado",
+      "validade": "2030-07-15"
+    },
+    {
+      "cred": "290-2020",
+      "nome": "André Filipe Branco Rodrigues",
+      "validade": "2030-08-04"
+    },
+    {
+      "cred": "291-2020",
+      "nome": "Carlos Daniel Valadas Mota",
+      "validade": "2030-11-12"
+    },
+    {
+      "cred": "292-2020",
+      "nome": "Carlos Fernando Morgado Ribeiro",
+      "validade": "2030-08-12"
+    },
+    {
+      "cred": "293-2020",
+      "nome": "Jorge Manuel Ceia Campos Loureiro",
+      "validade": "2030-08-13"
+    },
+    {
+      "cred": "295-2020",
+      "nome": "Filipe Sousa Rodrigues",
+      "validade": "2030-11-12"
+    },
+    {
+      "cred": "300-2020",
+      "nome": "José António Carriço Lopez Rodrigues",
+      "validade": "2030-11-12"
+    },
+    {
+      "cred": "304-2020",
+      "nome": "Rui Filipe Fontoura Teixeira",
+      "validade": "2030-12-19"
+    },
+    {
+      "cred": "305-2020",
+      "nome": "Carlos Manuel Figueiredo dos Santos",
+      "validade": "2030-11-26"
+    },
+    {
+      "cred": "308-2020",
+      "nome": "Salvador Lucena Cancela de Abreu",
+      "validade": "2030-12-11"
+    },
+    {
+      "cred": "310-2020",
+      "nome": "Fabrice Borrego Soares",
+      "validade": "2030-12-14"
+    },
+    {
+      "cred": "325-2021",
+      "nome": "Marco Alexandre Duarte Alegre",
+      "validade": "2026-12-06"
+    },
+    {
+      "cred": "327-2021",
+      "nome": "Rui Samuel Lopes",
+      "validade": "2031-03-15"
+    },
+    {
+      "cred": "333-2021",
+      "nome": "Filipe Augusto Valente Oliveira",
+      "validade": "2031-03-18"
+    },
+    {
+      "cred": "336-2021",
+      "nome": "Tiago Filipe Mendes de Oliveira",
+      "validade": "2026-04-16"
+    },
+    {
+      "cred": "337-2021",
+      "nome": "Tiago Manuel Tapadas de Oliveira Ramos Neto",
+      "validade": "2026-04-20"
+    },
+    {
+      "cred": "338-2021",
+      "nome": "Andreia Natividade Gonçalves",
+      "validade": "2026-04-20"
+    },
+    {
+      "cred": "339-2021",
+      "nome": "Bernardo José Santos Pessoa",
+      "validade": "2026-05-10"
+    },
+    {
+      "cred": "340-2021",
+      "nome": "Tiago João Serra Marques",
+      "validade": "2026-05-10"
+    },
+    {
+      "cred": "341-2021",
+      "nome": "Pedro Soares Mendes Almeida Godinho",
+      "validade": "2026-05-12"
+    },
+    {
+      "cred": "342-2021",
+      "nome": "António Carlos Tenreiro Ferreira",
+      "validade": "2026-05-14"
+    },
+    {
+      "cred": "343-2021",
+      "nome": "Ana Sofia Pereira Martins",
+      "validade": "2026-05-17"
+    },
+    {
+      "cred": "344-2021",
+      "nome": "Mara Leonor Teixeira de Carvalho",
+      "validade": "2026-05-17"
+    },
+    {
+      "cred": "345-2021",
+      "nome": "Hugo Ricardo Lopes Teixeira",
+      "validade": "2026-05-17"
+    },
+    {
+      "cred": "346-2021",
+      "nome": "Pedro Miguel Sousa Rojão",
+      "validade": "2026-05-17"
+    },
+    {
+      "cred": "347-2021",
+      "nome": "Bruno Miguel Bordalo Silva",
+      "validade": "2026-05-19"
+    },
+    {
+      "cred": "348-2021",
+      "nome": "Renato Ferreira Costa",
+      "validade": "2026-05-19"
+    },
+    {
+      "cred": "349-2021",
+      "nome": "Ângelo Manuel Gomes Cardoso",
+      "validade": "2026-05-21"
+    },
+    {
+      "cred": "350-2021",
+      "nome": "Pedro Manuel Vicente Nunes",
+      "validade": "2026-05-21"
+    },
+    {
+      "cred": "351-2021",
+      "nome": "João Pedro Gouvinhas Quinteira",
+      "validade": "2026-05-25"
+    },
+    {
+      "cred": "352-2021",
+      "nome": "Gilberto Manuel Salgado Baptista Gonçalves",
+      "validade": "2026-05-26"
+    },
+    {
+      "cred": "353-2021",
+      "nome": "Anabela Nunes Cerqueira",
+      "validade": "2026-05-26"
+    },
+    {
+      "cred": "354-2021",
+      "nome": "António Manuel Marcelino Vieira",
+      "validade": "2026-05-28"
+    },
+    {
+      "cred": "355-2021",
+      "nome": "Telma Filipa Lopes Gomes Briote",
+      "validade": "2026-06-02"
+    },
+    {
+      "cred": "356-2021",
+      "nome": "Sara Manuela Fernandes Gonçalves",
+      "validade": "2026-06-16"
+    },
+    {
+      "cred": "357-2021",
+      "nome": "José Eduardo Pinheiro Carvalho",
+      "validade": "2026-06-16"
+    },
+    {
+      "cred": "358-2021",
+      "nome": "João Filipe Lamelas Pestana Baptista Diniz",
+      "validade": "2026-06-16"
+    },
+    {
+      "cred": "359-2021",
+      "nome": "Joana Grangeiro Jacinto",
+      "validade": "2026-08-18"
+    },
+    {
+      "cred": "360-2021",
+      "nome": "Rute Isabel Mestre Marques",
+      "validade": "2026-08-24"
+    },
+    {
+      "cred": "361-2021",
+      "nome": "João António Ambrósio Cardoso",
+      "validade": "2026-08-25"
+    },
+    {
+      "cred": "362-2021",
+      "nome": "António Manuel Amaral Ferreira de Azevedo",
+      "validade": "2026-08-25"
+    },
+    {
+      "cred": "363-2021",
+      "nome": "Filipe Alexandre Santos Pais",
+      "validade": "2026-08-26"
+    },
+    {
+      "cred": "364-2021",
+      "nome": "Marco Paulo Nunes Sequeira",
+      "validade": "2026-08-26"
+    },
+    {
+      "cred": "365-2021",
+      "nome": "António José Pires Sanches",
+      "validade": "2026-08-30"
+    },
+    {
+      "cred": "366-2021",
+      "nome": "Alberto Paulo Pinhanços Bianchi Machado de Sampaio",
+      "validade": "2026-09-02"
+    },
+    {
+      "cred": "367-2021",
+      "nome": "Ana Cláudia Afonso Peixoto",
+      "validade": "2026-11-30"
+    },
+    {
+      "cred": "368-2021",
+      "nome": "Paulo César Alves de Oliveira",
+      "validade": "2026-11-30"
+    },
+    {
+      "cred": "369-2021",
+      "nome": "Paula Alexandra Pereira Fernandes Andrade",
+      "validade": "2026-11-30"
+    },
+    {
+      "cred": "370-2021",
+      "nome": "Carlos Alberto Machado",
+      "validade": "2026-11-30"
+    },
+    {
+      "cred": "371-2021",
+      "nome": "Pedro Miguel Correia Leite",
+      "validade": "2026-11-30"
+    },
+    {
+      "cred": "372-2021",
+      "nome": "Nelson Luís Bettencourt Sebastião Pereira de Melo",
+      "validade": "2026-11-30"
+    },
+    {
+      "cred": "373-2021",
+      "nome": "Carla Isabel Gomes Bacelo",
+      "validade": "2026-12-03"
+    },
+    {
+      "cred": "374-2021",
+      "nome": "Paulo Jorge Martins Cascalho",
+      "validade": "2026-12-03"
+    },
+    {
+      "cred": "375-2021",
+      "nome": "Jorge Manuel Amado Nunes",
+      "validade": "2026-12-03"
+    },
+    {
+      "cred": "376-2021",
+      "nome": "Cidália de Fátima Ginja Pinto",
+      "validade": "2026-12-03"
+    },
+    {
+      "cred": "377-2021",
+      "nome": "Armando Emanuel Rainha Pereira Simões Pacheco",
+      "validade": "2026-12-06"
+    },
+    {
+      "cred": "378-2021",
+      "nome": "António Carlos Marques Nora",
+      "validade": "2026-12-14"
+    },
+    {
+      "cred": "379-2021",
+      "nome": "António Carlos da Silva Antunes",
+      "validade": "2026-12-16"
+    },
+    {
+      "cred": "380-2022",
+      "nome": "Nuno Manuel Meireles Gonçalves",
+      "validade": "2027-06-08"
+    },
+    {
+      "cred": "381-2022",
+      "nome": "Paulo Daniel Faria Pinheiro",
+      "validade": "2027-06-08"
+    },
+    {
+      "cred": "382-2022",
+      "nome": "Ricardo Manuel de Carvalho Saldanha",
+      "validade": "2027-06-08"
+    },
+    {
+      "cred": "383-2022",
+      "nome": "Miguel Filipe dos Reis Martins",
+      "validade": "2027-06-09"
+    },
+    {
+      "cred": "384-2022",
+      "nome": "Álvaro Manuel Rua Martins",
+      "validade": "2027-06-09"
+    },
+    {
+      "cred": "385-2022",
+      "nome": "Bruno Miguel Ferreira Duarte",
+      "validade": "2027-06-09"
+    },
+    {
+      "cred": "386-2022",
+      "nome": "Sérgio Manuel Jerónimo Joaquim",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "387-2022",
+      "nome": "Silvana Daniela Pereira Pais",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "388-2022",
+      "nome": "Márcio Manuel Fernandes Novo",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "389-2022",
+      "nome": "Patrícia Torres Lourenço",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "390-2022",
+      "nome": "Patrícia Alexandra Nascimento Caeiro",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "391-2022",
+      "nome": "Luís Miguel Ferreira Marques",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "392-2022",
+      "nome": "António Júlio Gomes Aires",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "393-2022",
+      "nome": "Fernando Emanuel Moreira de Sousa Pereira Rodrigues",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "394-2022",
+      "nome": "Amândio Paulo Martins Nunes",
+      "validade": "2027-06-23"
+    },
+    {
+      "cred": "395-2022",
+      "nome": "Pedro Miguel Sequeira Neto Gomes do Amaral",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "396-2022",
+      "nome": "Tiago Miguel Baptista Damas",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "397-2022",
+      "nome": "Sandra Cristina Gonçalves Nunes",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "398-2022",
+      "nome": "Alexandre Paulo Brito da Cruz",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "399-2022",
+      "nome": "Guilherme Bilreiro Morgado",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "400-2022",
+      "nome": "Pedro Cordeiro Arala Chaves",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "401-2022",
+      "nome": "Nuno Alexandre Page Fidalgo",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "402-2022",
+      "nome": "Manuel Mendes Rodrigues Cavaqueira",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "403-2022",
+      "nome": "Marcos Sal Cando",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "404-2022",
+      "nome": "Ricardo José Tapa Gonçalves",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "405-2022",
+      "nome": "Humberto José Luís Morgado",
+      "validade": "2027-11-03"
+    },
+    {
+      "cred": "406-2022",
+      "nome": "Hugo Filipe Pinto Gonçalves",
+      "validade": "2027-11-16"
+    },
+    {
+      "cred": "407-2022",
+      "nome": "Maria Miguel Teixeira Cruz",
+      "validade": "2027-11-17"
+    },
+    {
+      "cred": "408-2022",
+      "nome": "Rui Pedro Vieira Lacerda Vale Quaresma",
+      "validade": "2027-11-17"
+    },
+    {
+      "cred": "409-2022",
+      "nome": "Carlos Manuel Poço Pereira",
+      "validade": "2027-12-15"
+    },
+    {
+      "cred": "410-2022",
+      "nome": "Marta Patrícia de Oliveira e Silva",
+      "validade": "2027-12-15"
+    },
+    {
+      "cred": "411-2022",
+      "nome": "Marcelo Custódio Salgado Catalão",
+      "validade": "2027-12-15"
+    },
+    {
+      "cred": "412-2022",
+      "nome": "Luís Mariano Gonçalves de Freitas",
+      "validade": "2027-12-15"
+    },
+    {
+      "cred": "413-2022",
+      "nome": "Henrique Marques Garcia",
+      "validade": "2027-12-15"
+    },
+    {
+      "cred": "414-2022",
+      "nome": "Marcos André Goulão Campos",
+      "validade": "2027-12-15"
+    },
+    {
+      "cred": "415-2022",
+      "nome": "António Manuel Pereira de Almeida Santos",
+      "validade": "2027-12-16"
+    },
+    {
+      "cred": "416-2022",
+      "nome": "Catarina Inês Mendonça Figueiredo",
+      "validade": "2027-12-16"
+    },
+    {
+      "cred": "417-2022",
+      "nome": "Jorge Miguel Fontarra Pereira",
+      "validade": "2027-12-19"
+    },
+    {
+      "cred": "418-2022",
+      "nome": "José Armando Outor Canha",
+      "validade": "2027-12-19"
+    },
+    {
+      "cred": "419-2022",
+      "nome": "Márcio Alexandre Teixeira Pereira",
+      "validade": "2027-12-19"
+    },
+    {
+      "cred": "420-2022",
+      "nome": "Ana Paula de Carvalho Pereira",
+      "validade": "2027-12-19"
+    },
+    {
+      "cred": "421-2022",
+      "nome": "Rui Miguel Mota Poceiro",
+      "validade": "2027-12-19"
+    },
+    {
+      "cred": "422-2022",
+      "nome": "Ana Lúcia da Paz Isidro Batista",
+      "validade": "2027-12-19"
+    },
+    {
+      "cred": "423-2022",
+      "nome": "Gualter António Pereira de Castro",
+      "validade": "2027-12-19"
+    },
+    {
+      "cred": "424-2022",
+      "nome": "Adriano José Nave Pereira",
+      "validade": "2027-12-19"
+    },
+    {
+      "cred": "425-2022",
+      "nome": "João Pedro Lima Bezerra",
+      "validade": "2027-12-21"
+    },
+    {
+      "cred": "426-2023",
+      "nome": "Ana Isabel da Silva Santos",
+      "validade": "2028-01-04"
+    },
+    {
+      "cred": "427-2023",
+      "nome": "Sara Alexandra Fernandes Alves Ferreira Barros",
+      "validade": "2028-01-04"
+    },
+    {
+      "cred": "428-2023",
+      "nome": "Sónia Maria Lopes Martinho",
+      "validade": "2028-01-05"
+    },
+    {
+      "cred": "429-2023",
+      "nome": "Vanessa Louzeiro do Nascimento Marques",
+      "validade": "2028-01-05"
+    },
+    {
+      "cred": "430-2023",
+      "nome": "Patrícia Isabel Fernandes da Cruz",
+      "validade": "2028-01-05"
+    },
+    {
+      "cred": "431-2023",
+      "nome": "Maria João Vidigal Fernandez Pinto da Mota",
+      "validade": "2028-01-31"
+    },
+    {
+      "cred": "432-2023",
+      "nome": "Edgar João Pires Bragada",
+      "validade": "2028-01-31"
+    },
+    {
+      "cred": "433-2023",
+      "nome": "Sandra Cristina Marques Ferreira",
+      "validade": "2028-02-10"
+    },
+    {
+      "cred": "434-2023",
+      "nome": "João Paulo Torres Lima",
+      "validade": "2028-02-10"
+    },
+    {
+      "cred": "435-2023",
+      "nome": "Carlos Miguel Brandão Alves",
+      "validade": "2028-02-14"
+    },
+    {
+      "cred": "436-2023",
+      "nome": "Lília dos Santos Teixeira",
+      "validade": "2028-02-14"
+    },
+    {
+      "cred": "437-2023",
+      "nome": "Sandra Manuela Fernandes Pacheco",
+      "validade": "2028-02-15"
+    },
+    {
+      "cred": "438-2023",
+      "nome": "Nuno Gonçalo Ferreira Rocha",
+      "validade": "2028-02-15"
+    },
+    {
+      "cred": "439-2023",
+      "nome": "Nuno Helder Valbom Marques",
+      "validade": "2028-03-13"
+    },
+    {
+      "cred": "440-2023",
+      "nome": "Alexandre Manuel Fernandes da Silva Nogueira",
+      "validade": "2028-03-10"
+    },
+    {
+      "cred": "441-2023",
+      "nome": "Rui Filipe Dias Ventura",
+      "validade": "2028-05-09"
+    },
+    {
+      "cred": "442-2023",
+      "nome": "António Francisco Carneiro Geraldes Neto de Vasconcelos",
+      "validade": "2028-05-09"
+    },
+    {
+      "cred": "443-2023",
+      "nome": "Pedro Miguel do Carmo Dias",
+      "validade": "2028-05-09"
+    },
+    {
+      "cred": "444-2023",
+      "nome": "Luís Miguel Bento Alarico",
+      "validade": "2028-05-23"
+    },
+    {
+      "cred": "445-2023",
+      "nome": "Nuno Filipe Montez da Costa",
+      "validade": "2028-05-31"
+    },
+    {
+      "cred": "446-2023",
+      "nome": "Luís Carlos Pereira Miranda Carvalho",
+      "validade": "2028-06-20"
+    },
+    {
+      "cred": "447-2023",
+      "nome": "Artur Filipe Fernandes da Costa",
+      "validade": "2028-06-22"
+    },
+    {
+      "cred": "448-2023",
+      "nome": "João Alexandre Granchinho Belchiorinho",
+      "validade": "2028-06-23"
+    },
+    {
+      "cred": "449-2023",
+      "nome": "João Francisco de Pina Pinto Coelho de Moura",
+      "validade": "2028-07-05"
+    },
+    {
+      "cred": "450-2023",
+      "nome": "Ricardo José Carvalho Góis Martins",
+      "validade": "2028-07-10"
+    },
+    {
+      "cred": "451-2023",
+      "nome": "Fernando António Machado Albuquerque",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "452-2023",
+      "nome": "Américo Filipe Bastos Costa Pereira",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "453-2023",
+      "nome": "Francisco António Miranda Calejo",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "454-2023",
+      "nome": "Nuno Miguel Monteiro da Silva",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "455-2023",
+      "nome": "Luís Filipe Marcos Nunes",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "456-2023",
+      "nome": "Bruno João Antunes Taborda Gil Rito",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "457-2023",
+      "nome": "José Filipe Amorim de Pinho",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "458-2023",
+      "nome": "Pedro Nuno dos Santos Carrilho",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "459-2023",
+      "nome": "Paulo Sérgio Pereira de Bessa",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "460-2023",
+      "nome": "Luís Miguel Rosa Grilo",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "461-2023",
+      "nome": "José Marcos Ferreira de Azevedo Guerra Liberal",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "462-2023",
+      "nome": "Vera Susana Ferreira de Almeida",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "463-2023",
+      "nome": "João Pedro Louro e Silva Pereira",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "464-2023",
+      "nome": "Anita Isabel Ferreira da Costa Pinto",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "465-2023",
+      "nome": "Elmano Duarte Freitas da Silva",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "466-2023",
+      "nome": "Tânia Isabel Varejão Pereira",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "467-2023",
+      "nome": "Alexandra Sofia Gouveia Carvalho",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "468-2023",
+      "nome": "Filipe João Rodrigues Cuim",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "469-2023",
+      "nome": "Joana Cristina Vitorino Carinhas",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "470-2023",
+      "nome": "Nélia Cristina Luz José",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "471-2023",
+      "nome": "João Luís Inácio Dona",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "472-2023",
+      "nome": "Ângela Maria Fernandes Fraga",
+      "validade": "2028-07-18"
+    },
+    {
+      "cred": "473-2023",
+      "nome": "João Manuel de Castro Ribeiro",
+      "validade": "2028-07-27"
+    },
+    {
+      "cred": "474-2023",
+      "nome": "Hugo Emanuel Lourenço e Santos",
+      "validade": "2028-07-27"
+    },
+    {
+      "cred": "475-2023",
+      "nome": "José Henrique Pito Vasques Teixeira",
+      "validade": "2028-08-08"
+    },
+    {
+      "cred": "476-2023",
+      "nome": "Leonel Guilheiros Silva",
+      "validade": "2028-08-14"
+    },
+    {
+      "cred": "477-2023",
+      "nome": "Emanuel Moreira Castro Leite Cibrão",
+      "validade": "2028-11-17"
+    },
+    {
+      "cred": "478-2023",
+      "nome": "Bruno Filipe Martins Garcia",
+      "validade": "2028-11-10"
+    },
+    {
+      "cred": "479-2023",
+      "nome": "Tiago Manuel Pereira Silva",
+      "validade": "2028-11-10"
+    },
+    {
+      "cred": "480-2023",
+      "nome": "Isabel Maria Almeida Ferreira",
+      "validade": "2028-11-10"
+    },
+    {
+      "cred": "481-2023",
+      "nome": "António Acácio Gonçalves Batista Cordeiro",
+      "validade": "2028-12-21"
+    },
+    {
+      "cred": "482-2023",
+      "nome": "Carlos Filipe Castanheira Santos",
+      "validade": "2028-11-10"
+    },
+    {
+      "cred": "483-2023",
+      "nome": "Duarte Gomes Marques",
+      "validade": "2028-12-21"
+    },
+    {
+      "cred": "484-2023",
+      "nome": "Sérgio Miguel Silva Rosa Maggiolli",
+      "validade": "2028-11-10"
+    },
+    {
+      "cred": "485-2023",
+      "nome": "Alexandra Leal Gonçalves",
+      "validade": "2028-11-10"
+    },
+    {
+      "cred": "486-2023",
+      "nome": "Tiago Antunes da Silva",
+      "validade": "2028-11-10"
+    },
+    {
+      "cred": "487-2023",
+      "nome": "Jorge Manuel Pelica do Carmo",
+      "validade": "2029-01-11"
+    },
+    {
+      "cred": "488-2024",
+      "nome": "Ricardo Emanuel Teixeira",
+      "validade": "2029-01-24"
+    },
+    {
+      "cred": "489-2023",
+      "nome": "José Miguel Quaresma Cordeiro",
+      "validade": "2029-06-14"
+    },
+    {
+      "cred": "490-2024",
+      "nome": "Francisco Manuel Peraboa Mendes",
+      "validade": "2029-01-24"
+    },
+    {
+      "cred": "491-2024",
+      "nome": "Paulo Miguel Curião Trindade",
+      "validade": "2029-01-24"
+    },
+    {
+      "cred": "492-2024",
+      "nome": "Inês Beatriz Oliveira Pereira Cardoso Madeira",
+      "validade": "2029-01-24"
+    },
+    {
+      "cred": "493-2024",
+      "nome": "Telma Alexandra Sanches Pombal",
+      "validade": "2029-01-24"
+    },
+    {
+      "cred": "494-2024",
+      "nome": "Sandra Maria Lopes Ribeiro",
+      "validade": "2029-01-19"
+    },
+    {
+      "cred": "495-2024",
+      "nome": "Pedro Afonso Pires Branco",
+      "validade": "2029-01-19"
+    },
+    {
+      "cred": "496-2024",
+      "nome": "Carlos Alberto de Sousa Magalhães",
+      "validade": "2029-01-23"
+    },
+    {
+      "cred": "497-2024",
+      "nome": "Maria Helena Cuiça Simão",
+      "validade": "2029-01-24"
+    },
+    {
+      "cred": "498-2024",
+      "nome": "Bruno Sérgio Gomes Braz",
+      "validade": "2029-01-25"
+    },
+    {
+      "cred": "499-2024",
+      "nome": "André Ricardo Azevedo Morais",
+      "validade": "2029-01-25"
+    },
+    {
+      "cred": "500-2024",
+      "nome": "Telma Alexandra dos Santos Guerreiro",
+      "validade": "2029-01-25"
+    },
+    {
+      "cred": "501-2024",
+      "nome": "André Pereira Mendes Maurício",
+      "validade": "2029-01-31"
+    },
+    {
+      "cred": "502-2024",
+      "nome": "Ricardo Joel Martins Bernardino Marques Barrelas",
+      "validade": "2029-01-31"
+    },
+    {
+      "cred": "503-2024",
+      "nome": "Paulo Jorge da Costa Soares",
+      "validade": "2029-02-09"
+    },
+    {
+      "cred": "504-2024",
+      "nome": "Ricardo Filipe de Jesus Neves",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "505-2024",
+      "nome": "João António Rosa Marques Vaz",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "506-2024",
+      "nome": "Marlene Maria Guilherme Marques",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "507-2024",
+      "nome": "Joel Augusto Pereira da Silva",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "508-2024",
+      "nome": "Samuel de Sousa Calvário",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "509-2024",
+      "nome": "David de Sousa Correia Belo",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "510-2024",
+      "nome": "Luís Nuno Cabo Marques Loução Vilhena",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "511-2024",
+      "nome": "José Luís da Cruz Carvalho",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "512-2024",
+      "nome": "Henrique Pereira de Castro Mira Godinho",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "513-2024",
+      "nome": "Dário Leandro Oliveira Carvalho",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "514-2024",
+      "nome": "Emanuel Almeida Torres",
+      "validade": "2029-07-12"
+    },
+    {
+      "cred": "515-2024",
+      "nome": "Paulo Jorge Pereira Barreiro",
+      "validade": "2029-07-12"
+    },
+    {
+      "cred": "516-2024",
+      "nome": "Luís Carlos Pinto Ferreira",
+      "validade": "2029-07-01"
+    },
+    {
+      "cred": "517-2024",
+      "nome": "Luís Miguel Batoca Martins",
+      "validade": "2029-07-03"
+    },
+    {
+      "cred": "518-2024",
+      "nome": "Pedro Fernando Mota Pires Alves Ferreira",
+      "validade": "2029-07-15"
+    },
+    {
+      "cred": "519-2024",
+      "nome": "André Seixedo Ferreira",
+      "validade": "2029-07-15"
+    },
+    {
+      "cred": "520-2024",
+      "nome": "Tiago Filipe Clara Moreira",
+      "validade": "2030-01-14"
+    },
+    {
+      "cred": "521-2024",
+      "nome": "Akli Ait Benali",
+      "validade": "2030-01-14"
+    },
+    {
+      "cred": "522-2024",
+      "nome": "Ana Marília Barreira Claro",
+      "validade": "2030-01-14"
+    },
+    {
+      "cred": "523-2024",
+      "nome": "Nuno David Frade dos Santos",
+      "validade": "2030-01-14"
+    },
+    {
+      "cred": "524-2024",
+      "nome": "Bernardo Maria Godinho Prates Alves Bento",
+      "validade": "2030-01-14"
+    },
+    {
+      "cred": "525-2024",
+      "nome": "Pedro Miguel da Fonseca Moreira",
+      "validade": "2030-01-14"
+    },
+    {
+      "cred": "526-2024",
+      "nome": "Paulo Jorge Matias Mendes",
+      "validade": "2030-01-14"
+    },
+    {
+      "cred": "527-2024",
+      "nome": "Luís Miguel Marques Jana",
+      "validade": "2029-12-03"
+    },
+    {
+      "cred": "528-2024",
+      "nome": "Ana Catarina Marques Cunha Martins",
+      "validade": "2029-11-13"
+    },
+    {
+      "cred": "529-2024",
+      "nome": "José Matos de Pinho",
+      "validade": "2030-01-31"
+    },
+    {
+      "cred": "530-2024",
+      "nome": "André Dinis Mota da Costa",
+      "validade": "2030-01-31"
+    },
+    {
+      "cred": "531-2025",
+      "nome": "Pedro Miguel Matos Mingote",
+      "validade": "2030-05-20"
+    },
+    {
+      "cred": "532-2025",
+      "nome": "Artur Miguel Roque de Andrade Lourenço",
+      "validade": "2030-01-31"
+    },
+    {
+      "cred": "533-2025",
+      "nome": "Sónia Marisa Alves de Oliveira",
+      "validade": "2030-01-31"
+    },
+    {
+      "cred": "535-2025",
+      "nome": "Rui Manuel Valdeira Lourenço",
+      "validade": "2030-02-11"
+    },
+    {
+      "cred": "536-2025",
+      "nome": "Tiago Diogo de Brito",
+      "validade": "2030-03-12"
+    },
+    {
+      "cred": "537-2025",
+      "nome": "Mafalda Isabel Cachopo Veigas",
+      "validade": "2030-05-20"
+    },
+    {
+      "cred": "538-2025",
+      "nome": "José Luís Ferreira da Silva",
+      "validade": "2030-06-18"
+    },
+    {
+      "cred": "539-2025",
+      "nome": "Leonor Beatriz Simões Bandeira",
+      "validade": "2030-07-08"
+    },
+    {
+      "cred": "540-2025",
+      "nome": "Jorge Afonso Moutinho Garcez Nogueira",
+      "validade": "2030-07-08"
+    },
+    {
+      "cred": "541-2025",
+      "nome": "Pedro Miguel Marçal Alves",
+      "validade": "2030-08-05"
+    },
+    {
+      "cred": "542-2025",
+      "nome": "Carlos Manuel Alves",
+      "validade": "2030-11-24"
+    },
+    {
+      "cred": "544-2026",
+      "nome": "Sérgio Alexandre Neves Guimarães",
+      "validade": "2031-02-13"
+    },
+    {
+      "cred": "545-2026",
+      "nome": "Luís Filipe de Sá Guimarães",
+      "validade": "2031-02-13"
+    }
+  ]
+}

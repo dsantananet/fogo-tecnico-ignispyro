@@ -31,7 +31,7 @@
  async function guardarAnexo({acaoId,parcelaId='',ficheiro,tipo='fotografia',descricao='',capturadoEm,latitude=null,longitude=null}){
    if(!acaoId||!(ficheiro instanceof Blob))throw Error('Ação e ficheiro são obrigatórios');
    const id=crypto.randomUUID(), agora=new Date().toISOString();
-   const item={id,acaoId,parcelaId,tipo,descricao,capturadoEm:capturadoEm||agora,registadoEm:agora,
+   const item={id,acaoId,parcelaId,tipo,descricao,capturadoEm:capturadoEm||new Date(ficheiro.lastModified||Date.now()).toISOString(),registadoEm:agora,
      latitude,longitude,nome:ficheiro.name||id,mime:ficheiro.type||'application/octet-stream',ficheiro};
    await transaction('readwrite',store=>store.put(item));
    return {id,acaoId,parcelaId,tipo,registadoEm:agora};
@@ -46,6 +46,12 @@
      tx.oncomplete=()=>db.close();
    });
  }
+ function importarAnexos(items) {
+   return transaction('readwrite', store => {
+     for (const item of items) store.add(item);
+   });
+ }
+ async function atualizarAnexo(item){return transaction('readwrite',store=>store.put(item));}
  async function apagarAnexo(id){return transaction('readwrite',store=>store.delete(id));}
- root.IgnisPyroCampoStorage={guardarAnexo,listarAnexos,apagarAnexo};
+ root.IgnisPyroCampoStorage={guardarAnexo,listarAnexos,atualizarAnexo,importarAnexos,apagarAnexo};
 })(typeof window!=='undefined'?window:globalThis);
