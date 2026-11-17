@@ -66,9 +66,29 @@ jobs:
           path: ${{ env.APK }}
           if-no-files-found: error
 
+  windows:
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build portable Windows app
+        shell: pwsh
+        run: ./windows-src/build.ps1 -OutputDirectory dist
+      - name: Check the local Windows app
+        shell: pwsh
+        run: |
+          $app = Get-ChildItem dist -Filter '*.exe' | Select-Object -First 1
+          & $app.FullName --self-test
+          if ($LASTEXITCODE) { throw 'The Windows app does not contain all application assets.' }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fogo-tecnico-windows
+          path: dist/*.exe
+          if-no-files-found: error
+
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
-    needs: android
+    needs: [android, windows]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -76,13 +96,18 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: fogo-tecnico-android
-      - name: Publish tested APK
+      - uses: actions/download-artifact@v4
+        with:
+          name: fogo-tecnico-windows
+      - name: Publish tested Android and Windows apps
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
         run: |
           apk="Fogo-Tecnico-IgnisPyro-${TAG}.apk"
+          windows="Fogo-Tecnico-IgnisPyro-Windows-${TAG}.exe"
           test -f "$apk"
-          sha256sum "$apk" > SHA256SUMS.txt
-          gh release create "$TAG" "$apk" SHA256SUMS.txt --verify-tag \
+          test -f "$windows"
+          sha256sum "$apk" "$windows" > SHA256SUMS.txt
+          gh release create "$TAG" "$apk" "$windows" SHA256SUMS.txt --verify-tag \
             --repo "$GITHUB_REPOSITORY" --title "Fogo Técnico $TAG" --generate-notes

@@ -1,0 +1,39 @@
+name: Build Fogo Técnico for iOS Simulator
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  ios:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare the Xcode project
+        run: |
+          npm install --no-save --no-audit --no-fund '@capacitor/ios@^7.4.0'
+          npx cap add ios
+          /usr/libexec/PlistBuddy -c "Add :NSLocationWhenInUseUsageDescription string Usar GPS na ficha e nas fotografias." ios/App/App/Info.plist
+          /usr/libexec/PlistBuddy -c "Add :NSCameraUsageDescription string Fotografar a operação e associar a imagem à ficha." ios/App/App/Info.plist
+          /usr/libexec/PlistBuddy -c "Add :NSPhotoLibraryUsageDescription string Associar uma fotografia existente à ficha." ios/App/App/Info.plist
+      - name: Build for iPhone and iPad Simulator
+        run: |
+          version="$(node -p 'require("./package.json").version')"
+          xcodebuild -workspace ios/App/App.xcworkspace -scheme App \
+            -configuration Release -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath "$RUNNER_TEMP/ignispyro-ios" CODE_SIGNING_ALLOWED=NO MARKETING_VERSION="$version" build
+      - name: Package simulator app
+        run: |
+          bundle="$RUNNER_TEMP/ignispyro-ios/Build/Products/Release-iphonesimulator/App.app"
+          test -f "$bundle/public/index.html"
+          ditto -c -k --keepParent "$bundle" Fogo-Tecnico-IgnisPyro-iOS-Simulator.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fogo-tecnico-ios-simulator
+          path: Fogo-Tecnico-IgnisPyro-iOS-Simulator.zip
+          if-no-files-found: error

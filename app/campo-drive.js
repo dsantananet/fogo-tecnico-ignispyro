@@ -177,6 +177,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const feedback = $('driveStatus');
   const current = () => readDriveSetting(DRIVE_CONNECTION, null);
   function controls() {
+    $('driveEmailLabel').hidden = !!current();
     $('driveConnect').hidden = !!current();
     $('driveSyncNow').hidden = !current();
     $('driveDisconnect').hidden = !current();
@@ -188,7 +189,9 @@ window.addEventListener('DOMContentLoaded', () => {
     controls();
     feedback.textContent = 'A consultar o histórico no Google Drive…';
     try {
-      const {accessToken} = await plugins.DriveAuthorization.authorize({interactive});
+      const email = current()?.email || $('driveEmail').value.trim();
+      if (email && !$('driveEmail').checkValidity() && !current()) throw Error('Verifica o endereço da conta Google.');
+      const {accessToken} = await plugins.DriveAuthorization.authorize({interactive,email});
       const transport = makeDriveTransport(accessToken, plugins.CapacitorHttp);
       const account = await transport.account();
       if (current() && current().id !== account.permissionId) {

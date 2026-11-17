@@ -1,5 +1,6 @@
 package pt.ignispyro.fogotecnico;
 
+import android.accounts.Account;
 import android.app.Activity;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.IntentSenderRequest;
@@ -29,13 +30,18 @@ public class DriveAuthorization extends Plugin {
                 PluginCall call = pending;
                 pending = null;
                 if (call == null) return;
-                if (result.getResultCode() != Activity.RESULT_OK) {
+                if (result.getData() == null) {
                     call.reject("Autorização do Google cancelada.", "CONSENT_REQUIRED");
                     return;
                 }
                 try {
-                    resolve(call, Identity.getAuthorizationClient(getActivity())
-                        .getAuthorizationResultFromIntent(result.getData()));
+                    AuthorizationResult authorization = Identity.getAuthorizationClient(getActivity())
+                        .getAuthorizationResultFromIntent(result.getData());
+                    if (result.getResultCode() != Activity.RESULT_OK) {
+                        call.reject("Autorização do Google cancelada.", "CONSENT_REQUIRED");
+                        return;
+                    }
+                    resolve(call, authorization);
                 } catch (ApiException error) {
                     call.reject("O Google recusou a autorização (" + error.getStatusCode() + ").");
                 }
@@ -50,9 +56,11 @@ public class DriveAuthorization extends Plugin {
                 return;
             }
             var request = AuthorizationRequest.builder()
-                .setRequestedScopes(Collections.singletonList(new Scope(SCOPE))).build();
+                .setRequestedScopes(Collections.singletonList(new Scope(SCOPE)));
+            String email = call.getString("email", "").trim();
+            if (!email.isEmpty()) request.setAccount(new Account(email, "com.google"));
             pending = call;
-            Identity.getAuthorizationClient(getActivity()).authorize(request)
+            Identity.getAuthorizationClient(getActivity()).authorize(request.build())
                 .addOnSuccessListener(result -> {
                     if (!result.hasResolution()) {
                         pending = null;
