@@ -8,6 +8,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import androidx.activity.result.ActivityResult;
 import com.getcapacitor.BridgeActivity;
+import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
@@ -17,12 +18,16 @@ import android.os.Bundle;
 import android.util.Base64;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.InputStream;
+import java.io.ByteArrayOutputStream;
+import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends BridgeActivity {
     @Override
     public void onCreate(Bundle state) {
         registerPlugin(DocumentFiles.class);
         registerPlugin(ReleaseUpdates.class);
+        registerPlugin(DriveAuthorization.class);
         super.onCreate(state);
     }
 
@@ -56,6 +61,43 @@ public class MainActivity extends BridgeActivity {
                 return;
             }
             call.resolve();
+        }
+
+        @PluginMethod
+        public void openHistory(PluginCall call) {
+            Intent picker = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+            picker.addCategory(Intent.CATEGORY_OPENABLE);
+            picker.setType("*/*");
+            startActivityForResult(call, picker, "readHistory");
+        }
+
+        @ActivityCallback
+        private void readHistory(PluginCall call, ActivityResult result) {
+            if (call == null) return;
+            Intent data = result.getData();
+            if (result.getResultCode() != Activity.RESULT_OK || data == null || data.getData() == null) {
+                call.resolve();
+                return;
+            }
+
+            try (InputStream stream = getContext().getContentResolver().openInputStream(data.getData());
+                 ByteArrayOutputStream bytes = new ByteArrayOutputStream()) {
+                if (stream == null) throw new IOException("Ficheiro indisponível");
+                byte[] buffer = new byte[16384];
+                int length;
+                while ((length = stream.read(buffer)) != -1) {
+                    if (bytes.size() + length > 32 * 1024 * 1024) {
+                        call.reject("A cópia excede 32 MB. Usa uma cópia menor.");
+                        return;
+                    }
+                    bytes.write(buffer, 0, length);
+                }
+                JSObject response = new JSObject();
+                response.put("text", new String(bytes.toByteArray(), StandardCharsets.UTF_8));
+                call.resolve(response);
+            } catch (IOException | SecurityException error) {
+                call.reject("Não foi possível abrir a cópia.", error);
+            }
         }
 
         @PluginMethod

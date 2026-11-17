@@ -99,12 +99,9 @@ function initFieldBackups() {
       alert(error.message);
     }
   };
-  $('importHistory').onchange = async event => {
-    const file = event.target.files[0];
-    event.target.value = '';
-    if (!file) return;
+  const importHistory = async text => {
     try {
-      const data = JSON.parse(await file.text());
+      const data = JSON.parse(text.replace(/^\uFEFF/, ''));
       const modern = data.format === 'fogo-tecnico-history-v2';
       if ((!modern && data.format !== 'fogo-tecnico-history-v1') || !Array.isArray(data.actions)) throw Error('Formato de histórico inválido.');
       const actions = data.actions.map(action => ({...initial(), ...action}));
@@ -131,6 +128,24 @@ function initFieldBackups() {
       alert(error.message);
     }
   };
+  $('importHistory').onchange = async event => {
+    const file = event.target.files[0];
+    event.target.value = '';
+    try {
+      if (file) await importHistory(await file.text());
+    } catch (error) { alert(error.message); }
+  };
+  if (androidFiles?.openHistory) {
+    $('historyFileLabel').hidden = true;
+    const picker = $('openAndroidHistory');
+    picker.hidden = false;
+    picker.onclick = async () => {
+      try {
+        const {text} = await androidFiles.openHistory();
+        if (text) await importHistory(text);
+      } catch (error) { alert(error.message); }
+    };
+  }
 }
 
 window.addEventListener('DOMContentLoaded', initFieldBackups);

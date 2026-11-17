@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, copyFileSync, mkdirSync } from 'node:fs';
 const root = 'android/app';
 const main = `${root}/src/main`;
 const java = `${main}/java/pt/ignispyro/fogotecnico`;
-for (const file of ['MainActivity.java', 'ReleaseUpdates.java']) {
+for (const file of ['MainActivity.java', 'ReleaseUpdates.java', 'DriveAuthorization.java']) {
   copyFileSync(`android-src/${file}`, `${java}/${file}`);
 }
 
@@ -31,6 +31,7 @@ const gradle = `${root}/build.gradle`;
 const { version } = JSON.parse(readFileSync('package.json', 'utf8'));
 const [major, minor, patch] = version.split('.').map(Number);
 writeFileSync(gradle, readFileSync(gradle, 'utf8')
+  .replace(/dependencies \{/, match => match + "\n    implementation 'com.google.android.gms:play-services-auth:21.4.0'")
   .replace(/versionCode \d+/, `versionCode ${major * 10000 + minor * 100 + patch}`)
   .replace(/versionName "[^"]+"/, `versionName "${version}"`));
 
