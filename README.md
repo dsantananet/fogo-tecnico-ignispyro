@@ -40,3 +40,9 @@ O instalador assinado é disponibilizado na secção [Releases](https://github.c
 ## Licenciamento e identidade
 
 Código disponibilizado para auditoria e colaboração técnica. Logótipo e marca «IgnisPyro» identificam a autoria; não implicam associação institucional ao ICNF. As licenças de código e marca devem ser decididas antes de publicação definitiva.
+
+## Windows e iPhone/iPad
+
+Em Releases estão o APK assinado e o executável portátil Windows. Abre o executável e mantém a janela aberta enquanto usas a app no navegador. Em ambos, a app verifica novas versões publicadas em Releases.
+
+Em iPhone e iPad, abre https://dsantananet.github.io/fogo-tecnico-ignispyro/ no Safari e usa Partilhar → Adicionar ao ecrã principal. A app web usa armazenamento offline no navegador. A versão de simulador iOS é compilada em Actions. A instalação nativa num aparelho físico requer assinatura Apple.

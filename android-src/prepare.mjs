@@ -33,3 +33,10 @@ const [major, minor, patch] = version.split('.').map(Number);
 writeFileSync(gradle, readFileSync(gradle, 'utf8')
   .replace(/versionCode \d+/, `versionCode ${major * 10000 + minor * 100 + patch}`)
   .replace(/versionName "[^"]+"/, `versionName "${version}"`));
+
+const manifestText = readFileSync(manifest, 'utf8');
+if (!manifestText.includes('android.permission.ACCESS_FINE_LOCATION')) {
+  writeFileSync(manifest, manifestText.replace('</manifest>',
+    '    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />\n' +
+    '    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />\n</manifest>'));
+}

@@ -1,7 +1,8 @@
 name: Publish offline web app
 on:
   push:
-    tags: ['v*']
+    branches: [main]
+    paths: ['app/**', '.github/workflows/publish-web.yml']
   workflow_dispatch:
 permissions:
   contents: read
